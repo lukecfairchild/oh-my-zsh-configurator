@@ -1,6 +1,8 @@
 #!/bin/bash
 theme='lukecfairchild'
 
+sh ./dependencies/oh-my-zsh.sh
+
 file="$theme.zsh-theme"
 
 # Copy theme into theme directory
