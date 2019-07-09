@@ -1,12 +1,10 @@
 #!/bin/bash
+theme='lukecfairchild'
 
-#cp lukecfairchild.zsh-theme ~/.oh-my-zsh/theme/lukecfairchild.zsh-theme
+file="$theme.zsh-theme"
 
+# Copy theme into theme directory
+cp $file ~/.oh-my-zsh/themes/$file
 
-input="./input"
-
-while IFS= read -r line
-do
-	echo "$line" | sed "s/ZSH_THEME=\"[^\"]*\"/ZSH_THEME=\"lukecfairchild.zsh-theme\"/"
-done < "$input" > output
-
+# Set theme as active theme
+sed -i .BACKUP "s/ZSH_THEME=\"[^\"]*\"/ZSH_THEME=\"$file\"/g" $HOME/.zshrc
