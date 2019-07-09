@@ -1,1 +1,2 @@
-# oh-my-zsh-configurator
+# Oh-My-Zsh Configurator & Theme
+
