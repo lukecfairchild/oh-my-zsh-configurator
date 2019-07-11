@@ -9,4 +9,4 @@ file="$theme.zsh-theme"
 cp $file ~/.oh-my-zsh/themes/$file
 
 # Set theme as active theme
-sed -i .BACKUP "s/ZSH_THEME=\"[^\"]*\"/ZSH_THEME=\"$file\"/g" $HOME/.zshrc
+sed -i .BACKUP "s/ZSH_THEME=\"[^\"]*\"/ZSH_THEME=\"$theme\"/g" $HOME/.zshrc
